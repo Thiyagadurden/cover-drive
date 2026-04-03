@@ -36,6 +36,7 @@ print(f"   Train: {len(X_train)} | Test: {len(X_test)}")
 model = Pipeline([
     ('scaler', StandardScaler()),
     ('xgb', XGBRegressor(
+        n_jobs=1,
         n_estimators=300,
         max_depth=5,
         learning_rate=0.08,
