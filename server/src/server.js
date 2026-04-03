@@ -26,6 +26,6 @@ app.get('/api/health', (req, res) => {
 });
 
 // ── Start Server ──
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 CoverDrive API running on http://localhost:${PORT}`);
 });
